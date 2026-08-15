@@ -3,182 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evans Ishola | Computer Science Student</title>
+    <title>Evans Ishola — Computer Science, Babcock University</title>
+    <meta name="description" content="Evans Ishola. Computer Science undergraduate at Babcock University. Frontend, backend and database work.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="tokens.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2>Evans.</h2>
+<a class="skip" href="#index">Skip to content</a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- N13 · inline ⌘K-pill -->
+<header class="nav">
+    <div class="nav__in">
+        <a class="nav__mark" href="#index">Evans Ishola</a>
+
+        <nav class="nav__links" aria-label="Sections">
+            <a href="#stack">Stack</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </header>
 
-    <!-- Hero -->
-    <section id="home">
-        <div class="hero-content">
-            <p class="intro">HELLO, I'M</p>
+        <div class="nav__end">
+            <button type="button" class="kbd-btn" id="palette-open"
+                    aria-haspopup="dialog" aria-expanded="false">
+                <span class="kbd-btn__label">Jump to</span>
+                <kbd class="kbd">⌘K</kbd>
+            </button>
 
-            <h1>Evans Ishola</h1>
+            <a class="btn btn--primary" href="mailto:isholae4865@student.babcock.edu.ng">Email</a>
+        </div>
+    </div>
+</header>
 
-            <h2>
-                Computer Science Student & Aspiring Software Developer
-            </h2>
+<main>
 
-            <p>
-                I enjoy building websites, applications and digital solutions
-                while continuously improving my programming and software
-                development skills.
+    <!-- Index head -->
+    <section class="head" id="index">
+        <div class="head__lede">
+            <h1 class="head__name">Evans Ishola</h1>
+
+            <p class="head__line">
+                Computer Science undergraduate at Babcock University. I build
+                web interfaces, small backends and the databases underneath them.
             </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
-            </div>
+            <p class="head__links">
+                <a class="tlink" href="#work">Work <span aria-hidden="true">→</span></a>
+                <a class="tlink" href="#contact">Contact <span aria-hidden="true">→</span></a>
+            </p>
         </div>
+
+        <!-- Typographic readout. No window chrome — a rule and a label. -->
+        <figure class="readout">
+            <figcaption class="readout__label">status</figcaption>
+
+            <dl class="readout__body">
+                <dt>role</dt>    <dd>Computer Science undergraduate</dd>
+                <dt>school</dt>  <dd>Babcock University</dd>
+                <dt>focus</dt>   <dd>frontend · backend · databases</dd>
+                <dt>open to</dt> <dd class="ok">internships &amp; collaboration</dd>
+            </dl>
+        </figure>
     </section>
 
     <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
+    <section class="row" id="about">
+        <h2 class="row__title">About</h2>
 
+        <div class="row__body prose">
             <p>
-                I'm a Computer Science student with an interest in software
-                development and web technologies. I enjoy learning how
-                applications work and turning ideas into functional projects.
+                I&rsquo;m studying Computer Science because I like knowing how the
+                thing actually works — not just that it runs. Most of what
+                I&rsquo;ve learned so far came from building something small,
+                breaking it, and reading until it made sense.
             </p>
 
             <p>
-                I'm currently developing my skills in frontend development,
-                backend development, databases and modern programming tools.
+                Right now I&rsquo;m working through frontend development, backend
+                services, databases and the tooling around them. The projects
+                below are where that goes.
             </p>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
+    <!-- Stack · F3 tabular spec sheet -->
+    <section class="row" id="stack">
+        <h2 class="row__title">Stack</h2>
 
-            <div class="skills-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>SQL</span>
-                <span>C++</span>
-                <span>Python</span>
-                <span>Git</span>
-                <span>GitHub</span>
-            </div>
+        <div class="row__body">
+            <table class="spec">
+                <caption class="vh">Technologies grouped by layer</caption>
+                <tbody>
+                    <tr><th scope="row">markup &amp; style</th><td>HTML, CSS</td></tr>
+                    <tr><th scope="row">languages</th><td>JavaScript, Python, C++</td></tr>
+                    <tr><th scope="row">frontend</th><td>React</td></tr>
+                    <tr><th scope="row">backend</th><td>Node.js</td></tr>
+                    <tr><th scope="row">data</th><td>SQL</td></tr>
+                    <tr><th scope="row">tooling</th><td>Git, GitHub</td></tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+    <!-- Work · the one graphite band -->
+    <section class="row row--dark" id="work">
+        <h2 class="row__title">Work</h2>
 
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <h3>Personal Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio website designed to
-                        showcase my skills, projects and experience.
+        <div class="row__body">
+            <ol class="index">
+                <li class="entry">
+                    <h3 class="entry__name">Personal portfolio website</h3>
+                    <p class="entry__note">
+                        A responsive site for my skills, projects and contact
+                        details. This one.
                     </p>
+                    <p class="entry__tech">HTML · CSS · JavaScript</p>
+                </li>
 
-                    <p class="tech">
-                        HTML • CSS • JavaScript
+                <li class="entry">
+                    <h3 class="entry__name">Expense tracker</h3>
+                    <p class="entry__note">
+                        Records income and expenses, runs the running balance and
+                        groups transactions by category.
                     </p>
-                </div>
+                    <p class="entry__tech">HTML · CSS · JavaScript · localStorage</p>
+                </li>
 
-                <div class="project-card">
-                    <h3>Expense Tracker</h3>
-
-                    <p>
-                        A web application for recording income and expenses,
-                        calculating balances and organizing transactions.
+                <li class="entry">
+                    <h3 class="entry__name">Student management system</h3>
+                    <p class="entry__note">
+                        Add, edit, search and delete student records against a
+                        relational store.
                     </p>
+                    <p class="entry__tech">Node.js · Express · SQL</p>
+                </li>
 
-                    <p class="tech">
-                        HTML • CSS • JavaScript • Local Storage
+                <li class="entry">
+                    <h3 class="entry__name">Job application tracker</h3>
+                    <p class="entry__note">
+                        Full-stack. Tracks companies, application status and
+                        interview stages in one board.
                     </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Student Management System</h3>
-
-                    <p>
-                        A system for managing student records, including
-                        adding, editing, searching and deleting student data.
-                    </p>
-
-                    <p class="tech">
-                        Node.js • Express • SQL
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Job Application Tracker</h3>
-
-                    <p>
-                        A full-stack application for tracking job applications,
-                        companies, application status and interview progress.
-                    </p>
-
-                    <p class="tech">
-                        React • Node.js • Express • Database
-                    </p>
-                </div>
-
-            </div>
+                    <p class="entry__tech">React · Node.js · Express · SQL</p>
+                </li>
+            </ol>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
+    <section class="row" id="contact">
+        <h2 class="row__title">Contact</h2>
 
-            <p>
-                I'm open to opportunities, collaborations and learning
-                experiences.
+        <div class="row__body">
+            <p class="prose">
+                Open to internships, collaboration and anything that teaches me
+                something. Email is the fastest route.
             </p>
 
-            <div class="contact-links">
-                <a href="mailto:your-email@example.com">
-                    Email Me
-                </a>
+            <ul class="index index--links">
+                <li class="entry entry--link">
+                    <span class="entry__key">email</span>
+                    <a class="tlink" href="mailto:isholae4865@student.babcock.edu.ng">isholae4865@student.babcock.edu.ng</a>
+                </li>
 
-                <a href="https://github.com/" target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank">
-                    LinkedIn
-                </a>
-            </div>
+                <li class="entry entry--link">
+                    <span class="entry__key">github</span>
+                    <a class="tlink" href="https://github.com/isholae4865-glitch" rel="noopener noreferrer">github.com/isholae4865-glitch</a>
+                </li>
+            </ul>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Evans Ishola. All rights reserved.</p>
-    </footer>
+</main>
 
-    <script src="script.js"></script>
+<footer class="foot">
+    <p>&copy; 2026 Evans Ishola · Babcock University · Built by hand</p>
+</footer>
+
+<!-- ⌘K palette -->
+<div class="palette" id="palette" hidden>
+    <div class="palette__backdrop" data-palette-close></div>
+
+    <div class="palette__panel" role="dialog" aria-modal="true" aria-label="Jump to">
+        <input class="palette__input" id="palette-input" type="text"
+               placeholder="Jump to…" autocomplete="off" spellcheck="false"
+               aria-controls="palette-list">
+
+        <ul class="palette__list" id="palette-list" role="listbox" aria-label="Destinations"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
